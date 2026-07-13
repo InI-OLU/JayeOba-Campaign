@@ -27,37 +27,80 @@ function App() {
 
   return <main>
     <div className="cursor-aura" style={{ left: cursor.x, top: cursor.y }} />
-    <section className="hero grid-bg">
-      <div className="wrap">
-        <div className="eyebrow"><i />NIMechE / FACULTY OF ENGINEERING</div>
-        <h1 className="text = 50px">JAIYEOBA<br /><em>GABRIEL</em><br /></h1>
-        <div className="hero-bottom">
-          <div className="hero-copy"><p>For Vice President. NIMechE . ENGINEERING STUDENTS</p><div className="buttons"><a href="#manifesto" className="primary">VIEW MANIFESTO</a><a href="#vote" className="secondary">JOIN THE CORE</a></div><div className="hero-vote">
-  Vote
-  <br />
-  <em>JAIYEOBA GABRIEL</em>
-</div>
+  <section className="hero grid-bg">
+  <div className="wrap">
 
-<div className="hero-stats">
-  <div className="stat">
-    <strong>8+</strong>
-    <span>SERVICE ROLES</span>
-  </div>
+    <div className="eyebrow">
+      <i />
+      NIMechE / FACULTY OF ENGINEERING
+    </div>
 
-  <div className="stat">
-    <strong>100+</strong>
-    <span>STUDENTS IMPACTED</span>
-  </div>
+    <div className="mobile-portrait">
+      <img src={Gbounmi} alt="Jaiyeoba Gbounmi" />
+      <div>
+        <b>Jaiyeoba Gbounmi</b>
+        <small>CANDIDATE NO. 01 / MECH ENG. '26</small>
+      </div>
+    </div>
 
-  <div className="stat">
-    <strong>6+</strong>
-    <span>VOLUNTEER TEAMS</span>
-  </div>
-</div></div>
-          <div className="portrait"><img src={Gbounmi} alt="Jaiyeoba Gbounmi" /><div><b>Jaiyeoba Gbounmi</b><small>CANDIDATE NO. 01 / MECH ENG. '26</small></div></div>
+    <h1>
+      JAIYEOBA
+      <br />
+      <em>GABRIEL</em>
+    </h1>
+
+    <div className="hero-bottom">
+
+      <div className="hero-copy">
+        <p>
+          For Vice President. NIMechE . ENGINEERING STUDENTS
+        </p>
+
+        <div className="buttons">
+          <a href="#manifesto" className="primary">
+            VIEW MANIFESTO
+          </a>
+
+          <a href="#vote" className="secondary">
+            JOIN THE CORE
+          </a>
+        </div>
+
+        <div className="hero-vote">
+          Vote
+          <br />
+          <em>JAIYEOBA GABRIEL</em>
+        </div>
+
+        <div className="hero-stats">
+          <div className="stat">
+            <strong>8+</strong>
+            <span>SERVICE ROLES</span>
+          </div>
+
+          <div className="stat">
+            <strong>100+</strong>
+            <span>STUDENTS IMPACTED</span>
+          </div>
+
+          <div className="stat">
+            <strong>6+</strong>
+            <span>VOLUNTEER TEAMS</span>
+          </div>
         </div>
       </div>
-    </section>
+
+      <div className="portrait desktop-portrait">
+        <img src={Gbounmi} alt="Jaiyeoba Gbounmi" />
+        <div>
+          <b>Jaiyeoba Gbounmi</b>
+          <small>CANDIDATE NO. 01 / MECH ENG. '26</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     <div className="ticker"><div className="ticker-track">{Array.from({ length: 8 }, (_, i) => <span key={i}>VOTE JAIYEOBA GABRIEL</span>)}</div></div>
     <section className="section manifesto" id="manifesto"><div className="wrap"><div className="strategy-head"><div><label>SERVICE RECORD</label><h2>PROVEN IMPACT<br /><em>IN ACTION</em></h2></div><p>A leadership record built on welfare, logistics, tutorials, mentorship, and hands-on departmental support for Mechanical Engineering students.</p></div><div className="manifesto-grid">{manifestoFiles.map(([file, title, points]) => <article key={file}><label>{file}</label><h3>{title}</h3><ul>{points.map((point) => <li key={point}>{point}</li>)}</ul></article>)}</div></div></section>
     <section className="section projects campaign-exhibit"><div className="wrap"><label>FINAL EXHIBIT</label><h2>YOUR <em>ACTION</em></h2><div className="action-panel"><div><span>01</span><h3>Vote Jaiyeoba Gabriel</h3><p>Choose proven service, welfare-driven leadership, academic support, and real availability for Mechanical Engineering students.</p></div><div><span>02</span><h3>Join The Campaign</h3><p>Move with the core team, get updates, and help push the message across your class and circles.</p></div><div><span>03</span><h3>Connect Professionally</h3><p>Follow Gabriel's design, CAD, leadership, and development journey beyond the election season.</p></div></div></div></section>
