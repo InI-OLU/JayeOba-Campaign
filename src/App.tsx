@@ -86,7 +86,7 @@ const manifestoFiles: ManifestoFile[] = [
   {
     file: 'FILE 06',
     title: 'Volunteer Service',
-    subtitle: 'Positions Held Outside UNILAG',
+    subtitle: 'Positions Held Outside Mechanical Enginnering ',
     summary: [
       'Served across ULES ARB, ECX, Lagos SWUG, and NIMechE support roles.',
       'Held publicity, training, competition, and tutoring responsibilities outside regular class work.'
@@ -124,7 +124,7 @@ const manifestoFiles: ManifestoFile[] = [
       'Bought support gear, sponsored a student jersey, and gave out his own jersey so the female team could complete their kit.'
     ],
     full: [
-      'Purchased support gear for departmental sports, sponsored a student jersey, and gave out his own jersey so the female team could complete their kit.'
+      'Purchased support gear for departmental sports, sponsored a student jersey, and gave out his own jersey so the female team could complete their kit.Bought vuvuzela to support the Cheering and hyping during the USF 26 to encourage our Mech players while participating in their games'
     ]
   }
 ]
